@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Path of Light Yoga Studio :: Survey</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="yoga.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" value="Path of Light Yoga Studio's Website welcomes Yoga lovers and provide them 
+a way to see how it feels like to be a part of our studio. Check out our classes and schedule on our website.
+People can also buy Yoga mats through our Yoga e-store. Our contact details and a survey form are also available 
+on the website.">
+<style>
+
+
+
+form { display:block;
+font-family:Arial;
+
+font-size:90%;
+
+padding-left: 10px;
+
+margin-top:10px;
+background-color:#DEDBDE; 
+padding:10px;}
+
+label { display: block; }
+
+legend, label {font-weight: bold;
+                }
+
+legend {color:black;
+       font-style:italic;
+	   font-size:110%;}
+	   
+	   
+fieldset { width:90%;
+
+margin: 10px 0;}
+
+
+
+textarea {
+width:90%;
+margin-bottom: 10px; }
+
+</style>
+
+</head>
+
+<body>
+
+<header class="content">
+<h1><a href="index.html">Path of Light Yoga Studio</a></h1>
+</header>
+
+<nav> 
+<ul>
+<li><a href="index.html">Home</a></li> 
+<li><a href="classes.html">Classes</a></li> 
+<li><a href="schedule.html">Schedule</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="survey.html">Survey</a></li>
+<li><a href="store.html">Store</a></li>
+</ul>
+</nav>
+<div id="wrapper">
+<main>
+
+<h3>Complete the following Survey:</h3>
+
+
+<form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+
+<fieldset><legend>Contact Information</legend>
+<label for="Name">Name:</label>
+<input type="text" name="Name" id="Name" required>
+
+<label for="email">E-mail:</label>
+<input type="email" name="email" id="email" required>
+</label>
+</fieldset>
+
+<br>
+
+<fieldset><legend>Select your Favourite Yoga Asana</legend>
+
+<label><input type="checkbox" name="Hatha Yoga" id="Hatha Yoga" value="yes">Hatha Yoga</label>
+<label><input type="checkbox" name="Vinyasa Yoga" id="Vinyasa Yoga" value="yes">Vinyasa Yoga</label>
+<label><input type="checkbox" name="Restorative Yoga" id="Restorative Yoga" value="yes">Restorative Yoga</label>
+
+</fieldset>
+
+<br>
+
+<fieldset><legend>Which days you are planning to attend Yoga classes?</legend>
+<label for="days"></label>
+<select size="5" name="days" multiple="multiple" id="locations" >
+
+<option value="None selected" selected="selected">Select one or more days</option>
+<option value="Monday">Monday</option>
+<option value="Tuesday">Tuesday</option>
+<option value="Wednesday">Wednesday</option>
+<option value="Thursday">Thursday</option>
+<option value="Friday">Friday</option>
+<option value="Saturday">Saturday</option>
+<option value="Sunday">Sunday</option>
+
+</select>
+</fieldset>
+
+<br>
+
+<fieldset><legend>How long you want each session to be?</legend>
+<label><input type="radio" name="duration" id="1 Hour" value="1 hour">1 Hour</label>
+<label><input type="radio" name="duration" id="1.5 Hours" value="1.5 hours">1.5 Hours</label>
+<label><input type="radio" name="duration" id="2 Hours" value="2 hours">2 Hours</label>
+<label><input type="radio" name="duration" id="2.5 Hours" value="2.5 hours">2.5 Hours</label>
+<label><input type="radio" name="duration" id="3 Hours" value="3 hours">3 Hours</label>
+
+</fieldset>
+
+<br>
+
+
+
+<fieldset><legend>Suggestions for our yoga studio</legend>
+
+<textarea rows="3" name="Suggestions" id="Suggestions" cols="40" required></textarea>
+</fieldset>
+
+<br>
+
+<input type="submit" id="submit">
+<input type="reset" id="reset">
+
+
+
+</form>
+
+
+
+
+
+</main>
+
+<footer>
+Copyright &copy; 2020 Path of Light Yoga Studio<br>
+<a href="mailto:sourabh.arora@email.kpu.ca">sourabh.arora@email.kpu.ca</a>
+</footer>
+
+</div>
+</body>
+</html>

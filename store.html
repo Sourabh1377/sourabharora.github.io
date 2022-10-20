@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Path of Light Yoga Studio :: Store</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="yoga.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" value="Path of Light Yoga Studio's Website welcomes Yoga lovers and provide them 
+a way to see how it feels like to be a part of our studio. Check out our classes and schedule on our website.
+People can also buy Yoga mats through our Yoga e-store. Our contact details and a survey form are also available 
+on the website.">
+
+
+<style>
+form { display:block;
+font-family:Arial;
+
+font-size:90%;
+
+padding-left: 10px;
+
+margin-top:10px;
+
+padding:10px;}
+
+table {width:50%;
+       margin-left:0;
+	   border: 3px solid black;
+	   border-collapse:collapse;
+	   margin-bottom:1em;
+	   min-width:100px;
+
+}
+
+
+
+
+
+</style>
+
+<script>
+
+function calCostNamaste()
+{
+  document.calcart.costNamaste.value = (document.calcart.namaste.value * 49.99).toFixed(2);
+}
+
+function calCostLotus()
+{
+  document.calcart.costLotus.value = (document.calcart.lotus.value * 39.99).toFixed(2);
+}
+
+function calTotalCost()
+{
+  document.calcart.totalCost.value =  (parseFloat(document.calcart.costNamaste.value) + parseFloat(document.calcart.costLotus.value)).toFixed(2);
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header class="content">
+<h1><a href="index.html">Path of Light Yoga Studio</a></h1>
+</header>
+
+<nav> 
+<ul>
+<li><a href="index.html">Home</a></li> 
+<li><a href="classes.html">Classes</a></li> 
+<li><a href="schedule.html">Schedule</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="survey.html">Survey</a></li>
+<li><a href="store.html">Store</a></li>	
+</ul>
+</nav>
+<div id="wrapper">
+<main>
+
+<h2>Yoga Store</h2>
+<p>Continue your practice at home with a Yoga Set from Path of Light Yoga Studio.</p>
+
+
+<div id="flow">
+
+<section>
+<h3>Namaste Yoga Set</h3>
+
+<p>The Namaste Yoga Set includes a sustainable yoga mat, a 100% cotton
+yoga blanket, and two eco-friendly yoga blocks. $49.99</p>
+
+<form method="post" action="http://webdevbasics.net/cart.html">
+<input type="submit" value="Place in Cart">
+</form>
+
+</section>
+
+<section>
+<h3>Lotus Yoga Set</h3>
+<p>The Lotus Yoga Set includes a sustainable yoga mat
+ and a 100% cotton yoga blanket. $39.99</p>
+ 
+<form method="post" action="http://webdevbasics.net/cart.html">
+<input type="submit" value="Place in Cart">
+</form>
+ 
+</section>
+</div>
+
+<br>
+
+<form name="calcart" method="post"  action="https://webdevbasics.net/cart.html">
+    <table>
+	
+	<tr>    
+	<th>Description</th>
+	<th>Quantity</th>
+	<th>Price</th>
+	<th>Cost</th>
+	</tr>
+	
+	<tr>
+	<td>Namaste Yoga Set</td>
+	<td><input type="text" name="namaste" id="namaste" onchange="calCostNamaste()" size="5"></td>
+	<td>49.99</td>
+	<td><input type="text" name="costNamaste" id="costNamaste" readOnly="true" size="5"></td>
+	</tr>
+	
+	<tr>
+	<td>Lotus Yoga Set</td>
+	<td><input type="text" name="lotus" id="lotus" onchange="calCostLotus()" size="5"></td>
+	<td>39.99</td>
+	<td><input type="text" name="costLotus" id="costLotus" readOnly="true" size="5"></td>
+	</tr>
+	
+	<tr>
+	<td>Total Cost</td>
+	<td></td>
+	<td></td>
+	<td><input type="text" name="totalCost" id="totalCost" readOnly="true" size="5"></td>
+	</tr>
+	
+ 
+	
+	</table>
+
+	<input type="button" name="total" id="total" value="Calculate Total" onclick="calTotalCost()" >
+</form>
+
+
+<div id="storehero">
+
+</div>
+</main>
+
+<footer>
+Copyright &copy; 2020 Path of Light Yoga Studio<br>
+<a href="mailto:sourabh.arora@email.kpu.ca">sourabh.arora@email.kpu.ca</a>
+</footer>
+
+</div>
+</body>
+</html>
